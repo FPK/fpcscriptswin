@@ -1,1 +1,1 @@
-c:\fpc\compiler\ppc386 -Fuc:\fpc\rtl\units\i386-win32 %1 %2 %3 %4 %5 %6 %7 %8 %9
+c:\fpc\compiler\ppc386 -n -Fuc:\fpc\packages\extra\winunits\i386-win32 -Fuc:\fpc\rtl\units\i386-win32 -Fuc:\fpc\fcl\units\i386-win32 -Fuc:\fpc\packages\extra\winunits\units\i386-win32 -Fuc:\fpc\fv\units\i386-win32 %1 %2 %3 %4 %5 %6 %7 %8 %9
