@@ -1,1 +1,5 @@
-c:\fpc\compiler\ppcarm -Fuc:\fpc\rtl\units\arm-linux -Fuc:\fpc\fcl\units\arm-linux %1 %2 %3 %4 %5 %6 %7 %8 %9
+if EXIST c:\fpc\compiler\ppcrossarm.exe (
+c:\fpc\compiler\ppcrossarm @c:\fpc\bin\fpc.cfg %1 %2 %3 %4 %5 %6 %7 %8 %9
+) else (
+c:\fpc\compiler\ppcarm @c:\fpc\bin\fpc.cfg %1 %2 %3 %4 %5 %6 %7 %8 %9
+)
