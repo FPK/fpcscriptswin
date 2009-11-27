@@ -8,6 +8,7 @@ svn up docs
 svn up html
 svn up lazarus
 svn up projects
+svn up binaries
 cd hg\fpctrunk
 hg pull
 hg up
