@@ -1,5 +1,6 @@
 svn up logs
 svn up bin
+svn up svn
 svn up
 svn up fpcbuild
 svn up fixes
@@ -9,7 +10,3 @@ svn up html
 svn up lazarus
 svn up projects
 svn up binaries
-cd hg\fpctrunk
-hg pull
-hg up
-cd ..\..
