@@ -1,7 +1,6 @@
 svn up logs
 svn up bin
 svn up svn
-svn up
 svn up fpcbuild
 svn up fixes
 svn up fixes\fpcbuild
