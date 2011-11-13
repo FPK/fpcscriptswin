@@ -1,2 +1,2 @@
 rm build*.*
-make all FPC=c:\fpc\p64
+make all OS_TARGET=win64 CPU_TARGET=x86_64
