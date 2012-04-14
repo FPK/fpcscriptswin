@@ -1,2 +1,2 @@
 rm build*.*
-make all OS_TARGET=win64 CPU_TARGET=x86_64
+make all FPC=c:\pp\bin\i386-win32\ppcx64
