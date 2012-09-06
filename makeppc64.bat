@@ -1,1 +1,1 @@
-make PP=c:\fpc\ppc64\fpc\compiler\pp BINUTILSPREFIX=powerpc64-linux- "OPT=-al -vi -g -Ur" %1 %2 %3 %4 %5 %6 %7 %8 %9
+make FPC=c:\fpc\%MYFPC%compiler\powerpc64\pp "OPT=@c:\fpc\bin\fpc.cfg" %1 %2 %3 %4 %5 %6 %7 %8 %9
