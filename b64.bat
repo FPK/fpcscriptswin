@@ -1,2 +1,2 @@
 rm build*.*
-fptime make all FPC=c:\pp\bin\i386-win32\ppcx64 OVERRIDEVERSIONCHECK=1 -j 4
+fptime make all FPC=c:\pp\bin\i386-win32\ppcrossx64 OVERRIDEVERSIONCHECK=1 CPU_TARGET=x86_64 OS_TARGET=win64 CPU_SOURCE=x86_64 OS_SOURCE=win64
