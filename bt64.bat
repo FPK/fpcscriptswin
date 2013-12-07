@@ -1,7 +1,7 @@
 @echo off
-call b.bat
+call b64.bat
 if %ERRORLEVEL% neq 0 goto end
 cd tests
-call t32.bat
+call t64.bat
 cd ..
 :end
