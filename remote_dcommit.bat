@@ -12,4 +12,6 @@ cd %MYFPCDIR%\%MYFPC%
 "%GITBINDIR%\git" fetch -a
 if %ERRORLEVEL% neq 0 goto end
 "%GITBINDIR%\git" checkout -B master remotes/origin/master --
+if %ERRORLEVEL% neq 0 goto end
+"%GITBINDIR%\git" push origin --delete %1
 :end
