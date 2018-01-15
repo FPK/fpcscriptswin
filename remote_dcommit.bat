@@ -14,4 +14,8 @@ if %ERRORLEVEL% neq 0 goto end
 "%GITBINDIR%\git" checkout -B master remotes/origin/master --
 if %ERRORLEVEL% neq 0 goto end
 "%GITBINDIR%\git" push origin --delete %1
+if %ERRORLEVEL% neq 0 goto end
+"%GITBINDIR%\git" branch -D %1
+if %ERRORLEVEL% neq 0 goto end
+"%GITBINDIR%\git" log HEAD -n 3
 :end
