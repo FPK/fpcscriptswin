@@ -1,10 +1,7 @@
 @echo off
 make distclean
 make distclean
-call b.bat
-if %ERRORLEVEL% neq 0 goto end
+call b.bat || exit /b %ERRORLEVEL%
 cd tests
-call t32.bat
-if %ERRORLEVEL% neq 0 goto end
-call storelog.bat
-:end
+call t32.bat || exit /b %ERRORLEVEL%
+call storelog.bat || exit /b %ERRORLEVEL%
