@@ -1,10 +1,7 @@
 @echo off
-make distclean
-make distclean
-call b64.bat
-if %ERRORLEVEL% neq 0 goto end
+make distclean || exit /b %ERRORLEVEL%
+make distclean || exit /b %ERRORLEVEL%
+call b64.bat || exit /b %ERRORLEVEL%
 cd tests
-call t64.bat
-if %ERRORLEVEL% neq 0 goto end
-call storelog64.bat
-:end
+call t64.bat || exit /b %ERRORLEVEL%
+call storelog64.bat || exit /b %ERRORLEVEL%
