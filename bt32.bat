@@ -1,6 +1,5 @@
 @echo off
-make distclean
-make distclean
+make distclean -j
 call b.bat || exit /b %ERRORLEVEL%
 cd tests
 call t32.bat || exit /b %ERRORLEVEL%
