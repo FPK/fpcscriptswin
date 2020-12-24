@@ -1,1 +1,1 @@
-notepad++ %*
+start notepad++ %*

@@ -1,7 +1,5 @@
-call b.bat
-if errorlevel 0 goto test
-goto end
-:test
+@echo off
+call b.bat || exit /b %ERRORLEVEL%
 cd tests
-call t32.bat
-:end
+call t32.bat || exit /b %ERRORLEVEL%
+call storelog.bat || exit /b %ERRORLEVEL%
