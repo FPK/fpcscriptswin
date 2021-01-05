@@ -3,6 +3,12 @@ if "%~1"=="" (
 ) else (
   set CURR_BRANCH=%1
 )
+
+rem push to remote
+"%GITBINDIR%\git" push -u origin %CURR_BRANCH%
+rem check if everything has been successfully pushed
+"%GITBINDIR%\git" merge-base --is-ancestor @{u} %CURR_BRANCH%
+
 set "cmd1=cd %DCOMMIT_REMOTE_GITDIR% && git rebase"
 set "cmdall=%cmd1% %CURR_BRANCH%"
 plink -batch %DCOMMIT_REMOTE% "%cmdall%" || exit /b % %ERRORLEVEL%

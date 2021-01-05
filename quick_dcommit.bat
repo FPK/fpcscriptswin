@@ -5,5 +5,5 @@ echo Going to commit %BRANCH%"  || exit /b % %ERRORLEVEL%
 "%GITBINDIR%\git" checkout %BRANCH% || exit /b % %ERRORLEVEL%
 "%GITBINDIR%\git" commit -a %* || exit /b % %ERRORLEVEL%
 "%GITBINDIR%\git" push origin %BRANCH% || exit /b % %ERRORLEVEL%
-echo Press key to continue && read -n1 -s"  || exit /b % %ERRORLEVEL%
+pause || exit /b % %ERRORLEVEL%
 call remote_dcommit %BRANCH% || exit /b % %ERRORLEVEL%
