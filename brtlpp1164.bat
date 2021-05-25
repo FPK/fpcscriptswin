@@ -1,3 +1,4 @@
+@echo off
 if "%~1"== "" (
 echo Missing suffix
 ) else (
@@ -7,4 +8,5 @@ make all FPC=c:\fpc\%MYFPC%compiler\x86_64\pp PP=c:\fpc\%MYFPC%compiler\x86_64\p
 cd ..
 rm -rf units.%1
 cp -a units units.%1
+cd ..
 )
