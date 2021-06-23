@@ -1,0 +1,2 @@
+rm build*.*
+fptime make all FPC=c:\pp\bin\i386-win32\ppcrossx64 OVERRIDEVERSIONCHECK=1 CPU_TARGET=aarch64 OS_TARGET=win64 CPU_SOURCE=i386 OS_SOURCE=win32 "OPT=-O3" "CROSSOPT=%MYCROSSOPTA64%" "OPTNEW=%MYOPTX64%" %* -j || exit /b %ERRORLEVEL%
