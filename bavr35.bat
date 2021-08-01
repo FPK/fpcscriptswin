@@ -1,2 +1,2 @@
-set SUBARCH=avr2
+set SUBARCH=avr35
 call bavr
