@@ -1,2 +1,3 @@
-cd c:\fpc\branches\fixes\
-set MYFPC=branches\fixes\
+set MYFPCDIR=c:\fpc\
+set MYFPC=git\fixes\
+cd c:\fpc\git\fixes\
