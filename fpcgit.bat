@@ -1,2 +1,2 @@
-cd c:\fpc\git\fpctrunk
-set MYFPC=git\fpctrunk\
+cd c:\fpc\git\fpc
+set MYFPC=git\fpc\
