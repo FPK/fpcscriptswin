@@ -1,0 +1,1 @@
+call makearm.bat %*
