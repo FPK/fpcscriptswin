@@ -1,2 +1,3 @@
 @echo off
-start code -g %* > nul: 2> nul:
+rem start code -g %* > nul: 2> nul:
+code.cmd -g %*
