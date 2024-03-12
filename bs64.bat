@@ -3,7 +3,7 @@
 if "%~1"== "" (
 echo Missing suffix
 ) else (
-cd c:\fpc\%MYFPC%
+cd %MYFPCDIR%\%MYFPC%
 mkdir output.%1
 make distclean FPC=c:\pp\bin\i386-win32\ppcrossx64 OVERRIDEVERSIONCHECK=1 CPU_TARGET=x86_64 OS_TARGET=win64 CPU_SOURCE=x86_64 OS_SOURCE=win64 "CROSSOPT=%MYCROSSOPTX64% -al" "OPTNEW=%MYOPTX64% -al" -j
 if %ERRORLEVEL% neq 0 goto end
