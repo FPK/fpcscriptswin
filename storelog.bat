@@ -6,7 +6,7 @@ if exist "log.%i%" (
   goto loop
 ) else (
   echo Copying to number %i%
-  call cplog %i%
+  call cplog %i% || exit /b %ERRORLEVEL%
   goto break
 )
 :break
